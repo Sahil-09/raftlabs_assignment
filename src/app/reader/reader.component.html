@@ -1,0 +1,29 @@
+<br><input type="text" placeholder="Enter ISBN" [(ngModel)]="text"/>
+<button type="submit" (click)="search()">Search</button>
+<div class="container" *ngFor="let a of data">
+  <div class="temp" *ngIf="a.type"><b>{{ a.type }}</b></div>
+  <div class="temp" *ngIf="a.title"><b>{{ a.title }}</b></div>
+  <div class="temp" *ngIf="a.description">
+     {{ a.description.slice(0,200)+"..." }}
+  </div>
+  <div class="temp" *ngIf="a.isbn">{{ a.isbn }}</div>
+  <div class="temp" *ngIf="a.authors">
+    <i *ngFor="let f of a.authors.split(',')">
+        {{ f }}
+    </i></div>
+  <div class="temp" *ngIf="a.firstname">
+    <b>First Name</b> : {{ a.firstname }}
+  </div>
+  <div class="temp" *ngIf="a.lastname">
+    <b>Last Name</b> : {{ a.lastname }}
+  </div>
+  <div class="temp" *ngIf="a.email">
+    <b>Email</b> : {{ a.email }}
+  </div>
+  <div class="temp" *ngIf="a.publishedAt">
+    <b>Published At</b> : {{ a.publishedAt }}
+  </div>
+  <div class="temp" *ngIf="isAuthor">
+    <a routerLink="/read" [queryParams]="{q:['books','magazines'],author:a.email}">Show books and magazines</a>
+  </div>
+</div>
