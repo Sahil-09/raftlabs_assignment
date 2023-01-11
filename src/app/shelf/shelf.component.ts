@@ -9,10 +9,8 @@ import { utilService } from '../util.service';
 })
 export class ShelfComponent implements OnInit {
 
-  constructor(private http:HttpClient,private util:utilService) { }
-  Books:{title:string,description:string,author:string,isbn:string}[]=[]
+  constructor() { }
   ngOnInit(): void {
-    
   }
 
 }
