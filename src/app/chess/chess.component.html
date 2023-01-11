@@ -1,0 +1,10 @@
+<div class="container">
+    <button (click)="clear()">Reset board</button>
+    <div class="col-cell" *ngFor="let a of board;let i = index">
+        <div  *ngFor="let c of a;let j=index" (click)="move(i,j)">
+            <div  class="row-cell {{(i+j)%2==0 ? 'black' : ''}}{{c==true ? ' highlight' : ''}}">
+                {{c==true ? '' : c}}
+            </div>
+        </div>
+    </div>
+</div>

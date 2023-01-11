@@ -1,1 +1,4 @@
-<p>shelf works!</p>
+<div class="nav-item">
+    <a [routerLink]="['read']" [queryParams]="{q:['authors']}">Author</a><br>
+    <a [routerLink]="['read']" [queryParams]="{q:['books','magazines']}">Books & Magazine</a>
+</div>

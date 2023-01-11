@@ -1,0 +1,5 @@
+.nav-item{
+    display: flex;
+    gap: 1vw;
+    margin: 1vw 8vw;
+}

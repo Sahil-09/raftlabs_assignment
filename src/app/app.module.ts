@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { Approuter } from './routing.module';
 import { ShelfComponent } from './shelf/shelf.component';
 import { ReaderComponent } from './reader/reader.component';
+import { NavComponent } from './nav/nav.component';
+import { ChessComponent } from './chess/chess.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ShelfComponent,
-    ReaderComponent
+    ReaderComponent,
+    NavComponent,
+    ChessComponent
   ],
   imports: [
     BrowserModule,

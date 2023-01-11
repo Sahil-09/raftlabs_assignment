@@ -1,0 +1,19 @@
+.nav-item{
+    display: flex;
+    gap: 1vw;
+    background: rgb(240, 240, 240);
+    padding: 1vw;
+    font-size: 2.5vw;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: rgb(140, 0, 255);
+}
+
+.active-link{
+    color: rgb(140, 0, 255);
+}
